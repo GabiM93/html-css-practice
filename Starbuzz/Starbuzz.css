@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Syne+Mono&family=Train+One&display=swap');
+*{
+    /* CSS reset */
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    color: rgb(56, 38, 134);
+    font-family: "Train One";
+    font-size: 2em;
+    text-align: center;
+}
+h2 {
+    color: orangered;
+    font-family: fantasy;
+}
+h3{
+    color: darkblue;
+    font-family: Noto Sans KR;
+}
+h4 {
+    color: rgb(223, 5, 5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    font-family: Syne mono;
+    font-style: oblique;
+    color: rgb(10, 68, 13);
+    font-weight: bold;
+}
+body {
+    background-image: url(back2.jpg);
+    background-size:cover;
+    background-repeat: space;
+    background-color: rgba(253, 227, 227, 0.699);
+    /* fontul de baza al site-ului */
+    font-family: Noto Sans KR;
+}
+img {
+    height: 15em;
+}
+a {
+    color: rgb(172, 78, 41);
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+/* cand cursorul este pe link */
+a:hover {
+    color: rgb(0, 177, 68);
+    text-decoration-line: underline;
+}
+/* stilizam elementul cu id-ul capuccino */
+#capuccino {
+    color: saddlebrown;
+}
+/* stilizam elementele din clasa pret */
+.pret {
+    font-family: Train One;
+    color: rgb(6, 17, 78);
+
+}
+ul {
+    list-style-type: "☕";
+}
+#starbuzz {
+    font-size: 1.5em;
+}
+.produs {
+    background-color: rgba(158, 150, 115, 0.199);
+    border-style: solid;
+    border-color: rgba(119, 136, 153, 0.315);
+    border-radius: 1em 0 0 1em;
+    padding: 1em 3em;
+    margin: 0 1em 1em 1em;
+    width: 50%;
+}
+/* aliniem logo-ul pe centru in interiorul div-ului */
+#logo {
+    text-align: center;
+}

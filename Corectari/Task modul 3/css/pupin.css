@@ -1,0 +1,12 @@
+header{
+    border-bottom: groove;
+}
+
+div.content {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+a{
+    color: purple;
+}

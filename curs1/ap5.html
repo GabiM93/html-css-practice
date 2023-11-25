@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia 5 - curs 1</title>
+    <style>
+        .wrapper {
+            display: grid;
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto;
+            
+            grid-template-columns: repeat(12, 1fr);
+            /*  
+                grid-template-columns:  1fr 1fr 1fr 1fr .... de 12 ori ;
+                11 * 20 (gap) = 220px
+                960 -220 = 740 px
+                1fr = cu 1/12 din 720px = 61.66px
+                1fr = cu 1/12 din 90% = 7.5%
+            */
+            grid-gap: 20px;
+        }
+
+        .col {
+            background: rgb(74, 228, 163);
+        }
+
+        .span2 {
+            grid-column: auto / span 2;
+        }
+
+        .span3 {
+            grid-column: auto / span 3;
+        }
+
+        .span4 {
+            grid-column: auto / span 4;
+        }
+
+        .span5 {
+            grid-column: auto / span 5;
+        }
+
+        .span6 {
+            grid-column: auto / span 6;
+        }
+
+        .span7 {
+            grid-column: auto / span 7;
+        }
+
+        .span8 {
+            grid-column: auto / span 8;
+        }
+
+        .span9 {
+            grid-column: auto / span 9;
+        }
+
+        .span10 {
+            grid-column: auto / span 10;
+        }
+
+        .span11 {
+            grid-column: auto / span 11;
+        }
+
+        .span12 {
+            grid-column: auto / span 12;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+        <div class="col">13 <br>content</div>
+        <div class="col span6">14<br>content<br>content<br>content</div>
+        <div class="col span3">15<br>content<br>content</div>
+        <div class="col span2 content">16</div>
+</body>
+
+</html>

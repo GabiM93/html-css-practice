@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia 2 - curs 2</title>
+    <style>
+        body{
+            margin: auto;
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;    
+        }
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style>
+</head>
+<body>
+    
+    <a href="https://responsivebreakpoints.com/">https://responsivebreakpoints.com/</a>
+    <br><br>
+
+    <img
+        sizes="(max-width: 1400px) 100vw, 1400px"
+        srcset="
+        img/cat_mare_uzpvth_c_scale,w_200.jpg 200w,
+        img/cat_614.jpg 614w,
+        img/cat_mare_uzpvth_c_scale,w_894.jpg 894w,
+        img/cat_mare_wh5fvm_c_scale,w_1024.jpg 1024w,
+        img/dog_c_scale,w_1354.jpg 1354w,
+        img/dog_c_scale,w_1400.jpg 1400w"
+        src="img/dog_c_scale,w_1400.jpg"
+        alt="Aplicatia 2">
+    <picture>
+        <source srcset="img/ap2_mare.png" media="(min-width: 1000px)">
+        <img srcset="img/ap2_mica.jpg" alt="Aplicatia 2">
+    </picture>
+</body>
+</html>

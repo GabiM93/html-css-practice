@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+div.content {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+header{
+    border-bottom: groove;
+   }
+a{
+    color: purple;
+}

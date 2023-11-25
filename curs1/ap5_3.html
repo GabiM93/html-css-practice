@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia 5 - curs 1</title>
+    <style>
+        * {
+            /* Putem sa definim "variavile in CSS" */
+            --breakpoint: var(--break-at, 30rem);
+            --min: min((var(--breakpoint) - 100%) * 999, 100%);
+            --clamp: clamp(100% / var(--cols, 1) - 15px, (var(--breakpoint) - 100%) * 999, 100%);
+        }
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .site {
+            width: min(100%, 1000px - 40px);
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            gap: 15px;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(var(--min),
+                        1fr));
+            gap: 5px;
+            grid-auto-flow: dense;
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        nav li {
+            background-color: black;
+            padding: 10px;
+        }
+
+        header,
+        footer {
+            padding: 25px 0;
+        }
+
+        header,
+        footer {
+            background-color: rgb(153, 245, 210);
+        }
+
+        main {
+            --break-at: 40rem;
+            display: grid;
+            grid:
+                dense auto-flow auto / repeat(auto-fit, minmax(var(--min),
+                        1fr));
+            gap: 15px;
+        }
+
+
+        section {
+            --cols: 2;
+            --break-at: 30rem;
+            display: grid;
+            grid:
+                dense auto-flow auto / repeat(auto-fit, minmax(var(--clamp),
+                        1fr));
+            gap: 15px;
+        }
+
+        section .item {
+            background: rgb(240, 132, 132);
+            /*min-height: 100px;*/
+            padding-top: 40%;
+        }
+
+        aside {
+            --cols: 3;
+            --break-at: 20em;
+            grid-column-end: -1;
+            display: grid;
+            grid:
+                auto-flow 50px / repeat(auto-fill, minmax(var(--clamp),
+                        1fr));
+            gap: 5px;
+        }
+
+        aside .item {
+            background: #000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="site">
+        <header></header>
+        <nav>
+            <ul role="list" class="container-nav">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <div class="item"></div>
+            </section>
+            <section>
+                <div class="item"></div>
+                <div class="item"></div>
+            </section>
+
+            <aside>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </aside>
+
+        </main>
+
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>

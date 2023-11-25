@@ -1,0 +1,36 @@
+Pentru a transforma in mod automat fisiere scss/sass/less in css folosim gulp
+1.Instalam  Node.js
+ https://nodejs.org/en/download/
+2. Verificam in command prompt
+node -v
+npm -v
+3. In proiectul curent
+npm init
+4. Instalam gulp
+npm install gulp -g
+npm install gulp-sass@4.1.1 --save-dev
+npm install node-sass@4.12 --save-dev
+npm install gulp-concat --save-dev
+npm install gulp-clean-css --save-dev
+npm install gulp-rename --save-dev
+5. facem un fisier 
+gulpfile.js
+6. in fisierul package.json adaugam la "scripts"
+"scripts": {
+   "scss": "gulp sass"
+},
+
+7. Rulam comanda
+npm run scss
+
+sau gulp css  // gulp si nume task
+
+
+8.Optional pentru imagini
+//instalam http://www.graphicsmagick.org/download.html   si  https://imagemagick.org/script/download.php#macosx
+ apoi  verificam daca intalarea s-a facut cu success
+ convert --version
+ //https://stackabuse.com/working-with-images-in-node-js-graphicsmagick-and-imagemagick
+ //https://medium.com/@JohnAyeni/generating-responsive-images-with-gulp-30e9c5bcb5f0
+npm i  gulp-imagemin imagemin-mozjpeg gulp-image-resize  -s -D
+npm install --save-dev gulp-plumber
