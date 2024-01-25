@@ -17,13 +17,16 @@ h1 {
 }
 
 h2 {
-    color: orangered;
+    color: green;
     font-family: fantasy;
+    font-size: 2em;
+    text-align: center;
 }
 
 h3 {
-    color: darkblue;
+    color: rgb(195, 197, 46);
     font-family: Noto Sans KR;
+    margin: 0 1em 1em 1em;
 }
 
 h4 {
@@ -39,9 +42,9 @@ p {
 }
 
 body {
-    background-image: url(fundal1.jpg);
+    background-image: url(fundal2.jpg);
     background-size: cover;
-    background-repeat: space;
+    background-repeat: no-repeat;
     background-color: rgba(159, 250, 250, 0.699);
     /* fontul de baza al site-ului */
     font-family: Noto Sans KR;
@@ -59,12 +62,13 @@ a {
 
 /* cand cursorul este pe link */
 a:hover {
-    color: rgb(0, 177, 68);
+    color: rgb(4, 61, 26);
     text-decoration-line: underline;
+    font-style: italic;
 }
 
-/* stilizam elementul cu id-ul capuccino */
-#capuccino {
+/* stilizam elementul cu id-ul prajituri */
+#prajituri {
     color: saddlebrown;
 }
 
@@ -76,7 +80,10 @@ a:hover {
 }
 
 ul {
-    list-style-type: "☕";
+    list-style-type: "🍰";
+    font-size: larger;
+    font-style: bold;
+    
 }
 
 #bun {
@@ -90,10 +97,12 @@ ul {
     border-radius: 1em 0 0 1em;
     padding: 1em 3em;
     margin: 0 1em 1em 1em;
-    width: 50%;
+    width: 100%;
+
+
 }
 
-/* aliniem logo-ul pe centru in interiorul div-ului */
+/* aliniere logo pe centru in interiorul div-ului */
 .logo {
     text-align: center;
     font-size: 2em;
