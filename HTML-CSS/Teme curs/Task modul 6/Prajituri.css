@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Syne+Mono&family=Train+One&display=swap');
+
+* {
+    /* CSS reset */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #bfdbfe;
+    font-family: fantasy;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    color: #bfdbfe;
+    text-decoration-line: underline;
+    font-family: Noto Sans KR;
+    margin: 0 16px 16px 16px;
+}
+
+h3 {
+    color: #ef4444;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(Main/mac.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(159, 250, 250, 0.699);
+    /* fontul de baza al site-ului */
+    font-family: Noto Sans KR;
+}
+
+img {
+    height: 12em;
+}
+
+a {
+    color: rgb(56, 172, 41);
+    text-decoration-style: dotted;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #d1d5db;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+.pret {
+    font-family: Train One;
+    color: #bfdbfe;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.produs {
+    background-color: rgba(158, 150, 115, 0.199);
+    border-style: solid;
+    border-color: rgba(119, 136, 153, 0.315);
+    border-radius: 16px 0 0 16px;
+    padding: 16px 48px;
+    margin: 0 16px 16px 16px;
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    max-width: 1200px;
+}

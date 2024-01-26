@@ -10,39 +10,33 @@ html {
 }
 
 h1 {
-    color: #2e887b;
+    color: #ef4444;
     font-family: "Train One";
-    font-size: 2em;
+    font-size: 36px;
     text-align: center;
 }
 
 h2 {
-    color: green;
+    color: #ef4444;
     font-family: fantasy;
-    font-size: 2em;
+    font-size: 36px;
     text-align: center;
 }
 
 h3 {
-    color: rgb(195, 197, 46);
+    color: #d1d5db;
     font-family: Noto Sans KR;
-    margin: 0 1em 1em 1em;
+    margin: 0 16px 16px 16px;
+    text-decoration-line: underline;
 }
 
 h4 {
-    color: rgb(223, 5, 5);
+    color: #ef4444;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p {
-    font-family: Syne mono;
-    font-style: oblique;
-    color: rgb(10, 68, 13);
-    font-weight: bold;
-}
-
 body {
-    background-image: url(fundal2.jpg);
+    background-image: url(Main/mac.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(159, 250, 250, 0.699);
@@ -55,35 +49,24 @@ img {
 }
 
 a {
-    color: rgb(172, 78, 41);
-    text-decoration-style: none;
+    color: rgb(56, 172, 41);
+    text-decoration-style: dotted;
     text-decoration-line: none;
 }
 
-/* cand cursorul este pe link */
 a:hover {
-    color: rgb(4, 61, 26);
+    color: #d1d5db;
     text-decoration-line: underline;
     font-style: italic;
-}
-
-/* stilizam elementul cu id-ul prajituri */
-#prajituri {
-    color: saddlebrown;
-}
-
-/* stilizam elementele din clasa pret */
-.pret {
-    font-family: Train One;
-    color: rgb(6, 17, 78);
-
 }
 
 ul {
     list-style-type: "🍰";
     font-size: larger;
     font-style: bold;
-    
+    color: #d1d5db;
+    text-decoration-line: underline;
+    font-style: oblique;
 }
 
 #bun {
@@ -94,23 +77,15 @@ ul {
     background-color: rgba(158, 150, 115, 0.199);
     border-style: solid;
     border-color: rgba(119, 136, 153, 0.315);
-    border-radius: 1em 0 0 1em;
-    padding: 1em 3em;
-    margin: 0 1em 1em 1em;
+    border-radius: 16px 0 0 16px;
+    padding: 16px 48px;
+    margin: 0 16px 16px 16px;
     width: 100%;
-
-
 }
 
-/* aliniere logo pe centru in interiorul div-ului */
 .logo {
     text-align: center;
-    font-size: 2em;
+    font-size: 30px;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-.cover {
-    text-align: center;
-
 }
