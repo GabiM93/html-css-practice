@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateArieParalelipiped(a, b, c) {
+            var arie = 2 * (a * b + a * c + b * c);
+            return arie;
+        }
+        let a = parseInt(prompt("Te rog introdu valoarea numarului a"));
+        let b = parseInt(prompt("Te rog introdu valoarea numarului b"));
+        let c = parseInt(prompt("Te rog introdu valoarea numarului c"));
+        var rezultatArie = calculateArieParalelipiped(a, b, c);
+        document.write("Aria paralelipipedului este: " + rezultatArie);
+    </script>
+</body>
+
+</html>
